@@ -3,7 +3,7 @@ import json
 
 def send_template_message(whatsapp_number, template_name, parameters, token):
     # Define the URL with the recipient's WhatsApp number as a query parameter
-    url = f"https://app-server.wati.io/api/v1/sendTemplateMessage?whatsappNumber=%2B+91{whatsapp_number}"
+    url = f"https://live-server-116182.wati.io/api/v1/sendTemplateMessage?whatsappNumber=%2B+91{whatsapp_number}"
 
     # Define the headers
     headers = {
@@ -13,8 +13,8 @@ def send_template_message(whatsapp_number, template_name, parameters, token):
 
     # Define the payload
     payload = {
-        "template_name": template_name,
-        "broadcast_name": "Untitled_160220241138",
+        "template_name": "d5_1_message",
+        "broadcast_name": None,
         "parameters": parameters
     }
 
